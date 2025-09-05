@@ -14,7 +14,6 @@ const sockets = require('../socket.io');
 module.exports = function (Messaging) {
 	Messaging.editMessage = async (data) => {
 		
-		console.log('simon yu is cool');
 		const { uid, mid, roomId, content } = data;
 
 		await Messaging.checkContent(content);
